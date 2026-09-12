@@ -45,7 +45,7 @@ standalone_rows | chain_distinct_customers | target_base
        7         |            15            |     22
 ```
 
-## 🔍 Approach, in brief
+## 🔍 Approach
 
 1. **Naive count**: every `communication_log` row for merchant 501, no business rules applied → **30**
 2. **Approval/processing filter**: found 4 rows under a campaign still `approval_awaiting` despite already being `processed`; excluded anything not both `approved` and `processed` → **26**
